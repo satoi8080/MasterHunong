@@ -17,7 +17,7 @@
     "minSDKVer" : "1.0.0",
     "rotateDisabled" : false,
     "autoKeyboardEnabled" : false,
-    "keyboardToolbarEnabled" : false,
+    "keyboardToolbarEnabled" : true,
     "idleTimerDisabled" : false
   }
 }
