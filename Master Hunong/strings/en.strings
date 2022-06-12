@@ -1,4 +1,7 @@
 "CREATE_CATEGORY" = "Create Category";
 "CATEGORY_COMMON" = "Common";
+"CATEGORY_QUESTION" = "Question";
+"CATEGORY_JP" = "JP";
+"CATEGORY_JP_KANSAI" = "JP-Kansai";
 "COPIED" = "Copied";
 "CREATE_SNIPPET" = "Create Snippet";

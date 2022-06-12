@@ -5,7 +5,12 @@ const Keys = {
 
 function getCategories() {
   var cache = $cache.get(Keys.Categories)
-  return cache || [$l10n("CATEGORY_COMMON"),]
+  return cache || [
+    $l10n("CATEGORY_COMMON"),
+    $l10n("CATEGORY_QUESTION"),
+    $l10n("CATEGORY_JP"),
+    $l10n("CATEGORY_JP_KANSAI"),
+]
 }
 
 function setCategories(categories) {
@@ -20,7 +25,28 @@ function setCategories(categories) {
 }
 
 function getItems(category) {
-  return getAllItems()[category] || ["啊对对对", "啊是是是", "你说得对"]
+  switch (category) {
+    case $l10n("CATEGORY_COMMON"):
+      return [
+        "啊对对对", "啊是是是", "你说得对"
+      ]
+    case $l10n("CATEGORY_QUESTION"):
+      return [
+        "你说什么", "你再说一遍", "没听清你说什么"
+      ]
+    case $l10n("CATEGORY_JP"):
+      return [
+        "なるほど", "知らなかった", "そういうことか", 
+        "そうそうそう","そうだよね","あそうそうそうそう",
+        "えっと、そういうことか？"
+      ]
+    case $l10n("CATEGORY_JP_KANSAI"):
+      return [
+        "せや","せやで","せやね","そうやん"
+      ]
+    default:
+      return getAllItems()[category] || ["啊对对对", "啊是是是", "你说得对"]
+  }
 }
 
 function setItems(category, items) {
