@@ -1,7 +1,9 @@
 "CREATE_CATEGORY" = "Create Category";
 "CATEGORY_COMMON" = "Common";
 "CATEGORY_QUESTION" = "Question";
-"CATEGORY_JP" = "JP";
+"CATEGORY_EN_NEG" = "ENG -";
+"CATEGORY_EN_COMMON" = "ENG +/-";
+"CATEGORY_JP" = "JPN";
 "CATEGORY_JP_KANSAI" = "Kansai-ben";
 "COPIED" = "Copied";
 "CREATE_SNIPPET" = "Create Snippet";

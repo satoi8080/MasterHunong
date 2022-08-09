@@ -1,7 +1,9 @@
 "CREATE_CATEGORY" = "创建分类";
 "CATEGORY_COMMON" = "常用短语";
 "CATEGORY_QUESTION" = "疑问";
-"CATEGORY_JP" = "日语";
+"CATEGORY_EN_NEG" = "ENG -";
+"CATEGORY_EN_COMMON" = "ENG +/-";
+"CATEGORY_JP" = "JPN";
 "CATEGORY_JP_KANSAI" = "关西腔";
 "COPIED" = "已复制";
 "CREATE_SNIPPET" = "创建短语";

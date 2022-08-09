@@ -8,6 +8,8 @@ function getCategories() {
   return cache || [
     $l10n("CATEGORY_COMMON"),
     $l10n("CATEGORY_QUESTION"),
+    $l10n("CATEGORY_EN_NEG"),
+    $l10n("CATEGORY_EN_COMMON"),
     $l10n("CATEGORY_JP"),
     $l10n("CATEGORY_JP_KANSAI"),
 ]
@@ -33,6 +35,14 @@ function getItems(category) {
     case $l10n("CATEGORY_QUESTION"):
       return [
         "你说什么", "你再说一遍", "没听清你说什么"
+      ]
+    case $l10n("CATEGORY_EN_NEG"):
+      return [
+        "Tell me about it", "You're telling me"
+      ]
+    case $l10n("CATEGORY_EN_COMMON"):
+      return [
+        "You can say that again", "Exactly", "Totally", "Facts", "I know right", "ikr", "I agree"
       ]
     case $l10n("CATEGORY_JP"):
       return [
